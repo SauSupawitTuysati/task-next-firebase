@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import { fireStoreDB } from "@/lib/firebaseConfig"; 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Footer from "../components/Footer";
+ 
 
 export default function AddTask() {
   const router = useRouter();
